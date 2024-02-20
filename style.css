@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.parent {
+    background-color: rgb(107, 105, 105);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calDiv {
+    position: relative;
+    background-color: blanchedalmond;
+    height: 500px;
+    width: 270px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px 20px;
+}
+
+.calDiv .mic {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 2px;
+    background-color: rgb(192, 189, 189);
+    border-radius: 15px 15px 15px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calDiv .mic a {
+    color: black;
+}
+
+.calDiv .display {
+    position: relative;
+    background-color: wheat;
+    width: 100%;
+    height: 150px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 60px;
+}
+
+.calDiv .func {
+    position: relative;
+    /* background-color: pink; */
+    height: 280px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.func .numFun {
+    /* background-color: purple; */
+    height: 100%;
+    width: 75%;
+}
+
+.numFun .panel {
+    /* background-color: red; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.numFun .panel .btn {
+    position: relative;
+    width: 25%;
+    height: 90%;
+    border: 2px solid rgba(155, 155, 155, 0.541);
+    border-radius: 15px;
+    font-weight: 700;
+    box-shadow: 5px 5px 10px rgba(155, 155, 155, 0.37) inset;
+}
+
+.panel .btn:hover {
+    background-color: rgba(124, 123, 123, 0.315);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212) inset;
+}
+
+.numFun .panel.one .btn {
+    background-color: rgb(226, 157, 53);
+    border: 2px solid rgba(255, 136, 0, 0.651);
+    box-shadow: 5px 5px 10px rgb(228, 119, 18) inset;
+}
+
+.numFun .panel.one .btn:hover {
+    background-color: rgba(228, 119, 18, 0.507);
+    box-shadow: 5px 5px 10px rgba(209, 91, 13, 0.692) inset;
+}
+
+.panel .btn.zero {
+    width: 60%;
+}
+
+.calDiv .func .function {
+    display: grid;
+    width: 25%;
+}
+
+.func .function .fun {
+    background-color: rgb(226, 157, 53);
+    position: relative;
+    margin-left: 5px;
+    width: 75%;
+    height: 90%;
+    font-weight: 700;
+    border: 2px solid rgba(255, 136, 0, 0.651);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(228, 119, 18) inset;
+}
+
+.func .function .fun:hover {
+    background-color: rgba(228, 119, 18, 0.507);
+    box-shadow: 5px 5px 10px rgba(209, 91, 13, 0.692) inset;
+}
+
+.calDiv .author {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    font-size: 12px;
+}
